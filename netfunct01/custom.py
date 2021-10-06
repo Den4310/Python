@@ -19,6 +19,9 @@ def main():
     """called at runtime"""
     with open("devicecmd.json", "r") as devicecmdfile:
         devicecmd = json.load(devicecmdfile) # decode the JSON from the file to pythonic data
+        print(type(devicecmd))
+        print(devicecmd)
+        print (devicecmd.get[1])
 
     print("Welcome to the network device command pusher") # welcome message
 
